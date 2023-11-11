@@ -15,25 +15,35 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: k2_swds.cf
+    name: k2_swds.cf
+    description: '' # default=empty
+    url: 'https://swds.cf/v/' # URL to fetch
     method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    expectStatus: 400 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: kr.swds.cf
+    name: kr.swds.cf
+    description: ' '
+    url: 'https://kr.swds.cf/v/'
     method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    expectStatus: 400
+    linkable: false
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: kr.swds.cf
+    name: k3.swds.cf
+    description: ' '
+    url: 'https://k3.swds.cf/v/'
     method: GET
-    expectStatus: 200
+    expectStatus: 400
+    linkable: false
+
+  - id: hk.swds.cf
+    name: hk.swds.cf
+    description: ' '
+    url: 'https://hk.swds.cf/v/'
+    method: GET
+    expectStatus: 400
+    linkable: false
