@@ -80,8 +80,8 @@ export async function processCronTrigger(event) {
 
     // Send Telegram message on monitor change
     if (
-      monitorStatusChanged &&
-      SECRET_TELEGRAM_CHAT_ID !== 'aa'
+      monitorStatusChanged
+//      monitorStatusChanged &&    
 //      typeof SECRET_TELEGRAM_API_TOKEN !== 'undefined' &&
 //      SECRET_TELEGRAM_API_TOKEN !== 'default-gh-action-secret' &&
 //      typeof SECRET_TELEGRAM_CHAT_ID !== 'undefined' &&
