@@ -26,7 +26,7 @@ monitors:
 
   - id: kr.swds.cf
     name: kr.swds.cf
-    description: ' '
+    description: ''
     url: 'https://kr.ffd.pp.ua'
     method: GET
     expectStatus: 404
@@ -34,16 +34,16 @@ monitors:
 
   - id: k3.swds.cf
     name: k3.swds.cf
-    description: ' '
-    url: 'https://k3.swds.cf'
+    description: ''
+    url: 'https://k3.ffd.pp.ua'
     method: GET
-    expectStatus: 200
+    expectStatus: 403
     linkable: false
 
   - id: eu.swds.cf
     name: eu.swds.cf
-    description: ' '
-    url: 'https://eu.swds.cf'
+    description: ''
+    url: 'https://eu.swds.tk/v/?ed=2048'
     method: GET
-    expectStatus: 200
+    expectStatus: 400
     linkable: false
