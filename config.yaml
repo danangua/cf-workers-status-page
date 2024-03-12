@@ -18,32 +18,32 @@ monitors:
   - id: k2_swds.cf
     name: k2_swds.cf
     description: '' # default=empty
-    url: 'https://swds.cf/v/' # URL to fetch
+    url: 'https://swds.cf/py/ip.php' # URL to fetch
     method: GET # default=GET
-    expectStatus: 400 # operational status, default=200
+    expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
   - id: kr.swds.cf
     name: kr.swds.cf
     description: ' '
-    url: 'https://kr.swds.cf/v/'
+    url: 'https://kr.ffd.pp.ua'
     method: GET
-    expectStatus: 400
+    expectStatus: 404
     linkable: false
 
   - id: k3.swds.cf
     name: k3.swds.cf
     description: ' '
-    url: 'https://k3.swds.cf/v/'
+    url: 'https://k3.swds.cf'
     method: GET
-    expectStatus: 400
+    expectStatus: 200
     linkable: false
 
-  - id: hk.swds.cf
-    name: hk.swds.cf
+  - id: eu.swds.cf
+    name: eu.swds.cf
     description: ' '
-    url: 'https://hk.swds.cf/v/'
+    url: 'https://eu.swds.cf'
     method: GET
-    expectStatus: 400
+    expectStatus: 200
     linkable: false
